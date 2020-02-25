@@ -14,7 +14,7 @@ h1{
 
 .pokemon-list{
 	display: grid;
-	grid-template-columns: 1fr 100px 1fr;
+	grid-template-columns: 1fr 50px 1fr;
 	
 	max-width: 800px;
 	margin: auto;
@@ -29,7 +29,7 @@ h1{
 }
 
 .img{
-	width: 100%;
+	width: 500%;
 }
 
 .button{

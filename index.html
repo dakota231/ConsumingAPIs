@@ -17,7 +17,9 @@
 			<p>Name: </p>
 			<p>Type(s): </p>
 			<p>Weight: </p>
-			<p>Height: </p>	
+			<p>Height: </p>
+			<br><br>
+			<p><font color = "red"><i>...<br>Press the button on the right to do your search<br>from the 807 available pokemon<br>...</i></font color></p>
 	</div>
 	<br>
     <button class="button" onclick="ask()">New Search</button>
@@ -50,20 +52,20 @@
 			let image = item.getElementsByTagName("img")[0]
 			image.setAttribute("src", pokemon.sprites.front_default)
 			let name = item.getElementsByTagName("p")[1]
-			name.textContent = pokemon.name
-			name.textContent += " ... is the name"
+			name.textContent = "NAME ... "
+			name.textContent += pokemon.name
 			let id = item.getElementsByTagName("p")[0]
-			id.textContent = pokemon.id
-			id.textContent += " ... is the ID"
+			id.textContent = "ID ... "
+			id.textContent += pokemon.id
 			let type = item.getElementsByTagName("p")[2]
-			type.textContent = pokemon.types.map((type) => type.type.name).join(', ')
-			type.textContent += " ... is the type(s)"
+			type.textContent = "TYPE(S) ... "
+			type.textContent += pokemon.types.map((type) => type.type.name).join(', ')
 			let weight = item.getElementsByTagName("p")[3]
-			weight.textContent = pokemon.weight
-			weight.textContent += " ... is the weight"
+			weight.textContent = "WEIGHT ... "
+			weight.textContent += pokemon.weight
 			let height = item.getElementsByTagName("p")[4]
-			height.textContent = pokemon.height
-			height.textContent += " ... is the height"
+			height.textContent = "HEIGHT ... "
+			height.textContent += pokemon.height
 		}
 		
 		function ask (){
